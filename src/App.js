@@ -12,7 +12,7 @@ function App() {
     const handleSubmit = async () => {
         try {
             const parsedInput = JSON.parse(jsonInput);
-            const result = await axios.post('https://bajaj-1-t60j.onrender.com', parsedInput);  // Backend URL
+            const result = await axios.post('https://bajaj-1-t60j.onrender.com/bfhl', parsedInput);  // Backend URL
             setResponse(result.data);
         } catch (error) {
             alert('Invalid JSON or Error in API call');
